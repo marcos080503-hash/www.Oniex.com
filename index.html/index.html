@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>ONIEX</title>
+</head>
+
+<body>
+
+<!-- MENU -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-black fixed-top">
+        <div class="container">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="sobre.html">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contato.html">Contato</a>
+                </li>
+            </ul>
+
+            <a class="navbar-brand text-white ms-auto" href="index.html">
+                ONIEX
+            </a>
+
+        </div>
+    </nav>
+</header>
+
+<!-- CONTEÚDO -->
+<main>
+
+    <!-- BANNER/INICIO -->
+    <section class="banner fade-in">
+        <div class="banner-content">
+            <h1>40% OFF</h1>
+            <p>LIMITED DROP</p>
+            <a href="sobre.html" class="btn-banner">SAIBA MAIS</a>
+        </div>
+    </section>
+
+    <!-- PRODUTOS/CARTOES -->
+    <section class="produtos container my-5 fade-in">
+        <h2 class="text-center mb-5">NEW DROP</h2>
+
+        <div class="row">
+                <!-- CARD1 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card produto-card">
+                    <img src="img/produto1.webp" class="card-img-top" alt="Camiseta streetwear preta">
+                    <div class="card-body text-center">
+                        <h5>Camiseta Street</h5>
+                        <p class="preco">R$ 99,90</p>
+                        <a href="#" class="btn-produto">Comprar</a>
+                    </div>
+                </div>
+            </div>
+                    <!-- CARD2 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card produto-card">
+                    <img src="img/produto2.webp" class="card-img-top" alt="Moletom oversized preto">
+                    <div class="card-body text-center">
+                        <h5>Moletom Oversized</h5>
+                        <p class="preco">R$ 199,90</p>
+                        <a href="#" class="btn-produto">Comprar</a>
+                    </div>
+                </div>
+            </div>
+                    <!-- CARD3 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card produto-card">
+                    <img src="img/produto3.webp" class="card-img-top" alt="Calça cargo streetwear">
+                    <div class="card-body text-center">
+                        <h5>Calça Cargo</h5>
+                        <p class="preco">R$ 149,90</p>
+                        <a href="#" class="btn-produto">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SAIBA MAIS -->
+    <section class="destaque fade-in">
+        <div class="destaque-content">
+            <h2>NEW COLLECTION</h2>
+            <p>ESSENTIAL STREETWEAR</p>
+            <a href="#" class="btn-destaque">VER AGORA</a>
+        </div>
+    </section>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <h3>ONIEX</h3>
+                <p>Streetwear minimalista.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Links</h5>
+                <ul class="footer-links">
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="sobre.html">Quem somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Contato</h5>
+                <p>Email: contato@oniex.com</p>
+                <p>Instagram: @oniex</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="text-center copy">© 2026 ONIEX</p>
+    </div>
+</footer>
+
+<!-- JS animação -->
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+<!-- VLibras -->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>

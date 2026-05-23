@@ -1,0 +1,364 @@
+/* ================= NAVBAR ================= */
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white !important;
+    transition: 0.3s;
+    position: relative;
+    display: inline-block;
+}
+
+/* linha animada */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(88, 88, 88);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #888 !important;
+}
+
+.navbar {
+    border-bottom: 1px solid #222;
+}
+
+.navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* ================= BANNER ================= */
+.banner {
+    height: 100vh;
+    background-image: url('../img/banner.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner-content h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.banner-content h1::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: white;
+    margin: 10px auto;
+}
+
+.banner-content p {
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #ccc;
+}
+
+.btn-banner {
+    margin-top: 60px;
+    padding: 12px 30px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-banner:hover {
+    background: white;
+    color: black;
+}
+
+/* ================= PRODUTOS ================= */
+.produtos h2 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+}
+
+.produto-card {
+    border: none;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.produto-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.produto-card:hover img {
+    transform: scale(1.1);
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+}
+
+.preco {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-produto {
+    padding: 8px 20px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-produto:hover {
+    background: black;
+    color: white;
+}
+
+/* ================= DESTAQUE ================= */
+.destaque {
+    height: 65vh;
+    background-image: url('../img/destaque.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.destaque::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.destaque-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.destaque-content h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.btn-destaque {
+    border: 1px solid white;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-destaque:hover {
+    background: white;
+    color: black;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: black;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer h3,
+.footer h5 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #888;
+}
+
+.copy {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ================= SOBRE ================= */
+.topo {
+    margin: 60px 0;
+}
+
+.marca {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 6px;
+}
+
+.sub {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.bloco {
+    margin: 50px 0;
+}
+
+.texto h2 {
+    letter-spacing: 3px;
+}
+
+.texto p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.img-sobre {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* ================= DIFERENCIAIS ================= */
+.diferenciais {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.lista-diferenciais {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.lista-diferenciais li {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+}
+
+/* ================= REFERÊNCIAS ================= */
+.referencias {
+    margin: 60px 0 80px;
+    text-align: center;
+}
+
+.ref-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ref-card {
+    min-width: 150px;
+    padding: 20px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.ref-card:hover {
+    background: black;
+    color: white;
+}
+
+/* ================= CONTATO ================= */
+.contato h2 {
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 0;
+    border: 1px solid #ccc;
+    padding: 12px;
+    background: #f9f9f9;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    background: white;
+    border-color: black;
+    box-shadow: none;
+}
+
+.btn-enviar {
+    border: 1px solid black;
+    padding: 10px 25px;
+    background: transparent;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background: black;
+    color: white;
+}
+
+.info {
+    padding: 20px;
+}
+
+table {
+    text-align: center;
+}
+
+/* ================= ANIMAÇÃO ================= */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
